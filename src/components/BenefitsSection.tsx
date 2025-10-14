@@ -25,7 +25,7 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section id="beneficios" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {benefits.map((benefit, index) => (

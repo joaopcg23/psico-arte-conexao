@@ -1,15 +1,15 @@
-import psychologistPhoto from "@/assets/psychologist-photo.png";
+import psychologistAbout from "@/assets/psychologist-about.png";
 
 const AboutSection = () => {
   return (
-    <section className="relative bg-coral overflow-hidden">
+    <section id="sobre" className="relative bg-coral overflow-hidden">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="order-2 lg:order-1">
             <img 
-              src={psychologistPhoto} 
+              src={psychologistAbout} 
               alt="Jessica Melo - Psicóloga"
-              className="w-full h-auto rounded-2xl shadow-2xl"
+              className="w-full h-auto rounded-3xl shadow-2xl"
             />
           </div>
           

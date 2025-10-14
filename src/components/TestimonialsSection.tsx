@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import flowerDecoration from "@/assets/flower-decoration.png";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -50,7 +51,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white overflow-hidden">
+    <section id="depoimentos" className="relative py-16 md:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-foreground">
           Depoimentos
@@ -143,6 +144,15 @@ const TestimonialsSection = () => {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Flower decoration in bottom corner */}
+      <div className="absolute bottom-8 right-8 w-32 md:w-40 opacity-80">
+        <img 
+          src={flowerDecoration} 
+          alt="Decoração floral"
+          className="w-full h-auto"
+        />
       </div>
     </section>
   );
