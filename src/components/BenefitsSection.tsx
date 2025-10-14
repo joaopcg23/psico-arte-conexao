@@ -31,15 +31,15 @@ const BenefitsSection = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index} 
-              className="text-center animate-fade-in"
+              className="text-center animate-fade-in group cursor-default"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 rounded-full bg-muted flex items-center justify-center">
-                  <benefit.icon className="w-10 h-10 text-foreground" strokeWidth={1.5} />
+                <div className="w-20 h-20 rounded-full bg-muted flex items-center justify-center transition-all duration-300 group-hover:bg-coral group-hover:scale-110 group-hover:shadow-lg">
+                  <benefit.icon className="w-10 h-10 text-foreground transition-colors duration-300 group-hover:text-white" strokeWidth={1.5} />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-foreground">{benefit.title}</h3>
+              <h3 className="text-xl font-bold mb-3 text-foreground transition-colors duration-300 group-hover:text-coral">{benefit.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
             </div>
           ))}

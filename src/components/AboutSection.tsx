@@ -5,11 +5,11 @@ const AboutSection = () => {
     <section id="sobre" className="relative bg-coral overflow-hidden">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:order-1 flex justify-center">
             <img 
               src={psychologistAbout} 
               alt="Jessica Melo - Psicóloga"
-              className="w-full h-auto rounded-3xl shadow-2xl"
+              className="w-full max-w-sm h-auto"
             />
           </div>
           

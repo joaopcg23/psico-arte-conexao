@@ -43,7 +43,7 @@ const HeroSection = () => {
             <img 
               src={psychologistHero} 
               alt="Jessica Melo - Psicóloga"
-              className="w-full max-w-md h-auto rounded-3xl shadow-2xl"
+              className="w-full max-w-md h-auto"
             />
           </div>
         </div>
